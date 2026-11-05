@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Include partials -->
+    <%- include('partials/header') %>
+
     <h1>Your Friends</h1>
     <ul>
         <% friends.forEach(friend=> { %>
@@ -14,5 +17,7 @@
 
         <% }) %>
     </ul>
+
+    <%- include('partials/footer') %>
 </body>
 </html>
